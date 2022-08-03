@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family:  sans-serif;
+}
+header{
+    height: 80px;
+    background-color: #525256;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    margin: 10px ; 
+    margin: 30px 0px 20px 30px ;
+}
+nav ul{
+    display: flex;
+    margin: 30px;
+    width: 300px;
+    justify-content: space-between;
+    list-style: none;
+}
+.serv img{
+    width: 16px;
+    height: 16px;
+    color: white; 
+    vertical-align: middle;  
+}
+
+li.login{
+    border: 1px solid white;
+    width: 80px;
+    padding: 4px 10px 4px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+img.imo{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+section.pub{
+    background-color: #FBF9F9;
+    height: 500px;
+    display: flex;
+}
+.cl1{
+    display: flex;
+    padding: 20px;
+    background-color: #fbf9f9;
+    margin-bottom: 2px;
+    box-shadow: 0px 0px 9px black;
+    justify-content: space-between ;
+
+}
+
+.img{
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px black;
+}
+.r-d ,.l-d{
+    height: 100%;
+    margin: 80px 20px 0px 20px;
+    
+}
+.r-direct, .l-direct{
+    width: 20px;
+    height: 20px;
+    
+}
+.bt{
+    width: 100px;
+}
+.but{
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    padding: 10px;
+    background-color: #e65c24;
+    color: white;
+    font-weight: bolder;
+}
+.cl2{
+    padding: 20px;
+}
+
+.st{
+    text-align: center;
+    /* color: rgb(51, 51, 51); */
+}
+.div{
+    display: flex;
+}
+.d-pad{
+    padding: 10px;
+}
+h4 {
+    color: #1ca78b;
+}
+.tx{
+    color: rgb(129 128 128);
+}
+
+.bt-ap {
+    border-radius: 5px;
+    border: none;
+    background-color: #525256;
+    padding: 8px;
+    color: white;
+    font-size: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: right;
+}
+.cl3{
+    display: flex;
+    padding: 40px;
+}
+.prod {
+    padding-left: 20px;
+}
+
+.tit {
+    margin-top: 8px;
+}
+
+.px {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ty {
+    display: flex;
+    justify-content: right;
+}
+.nam {
+    width: 80px;
+    font-size: 8px;
+    font-weight: bold;
+}
+.cl4 h2{
+    text-align: center;
+}
+.elm{
+    background-color: #fbf9f9;
+    box-shadow: 0px 2px 5px;
+    padding: 2% 0px 2% 12%;
+    width: 88%;
+}
+.celm{
+    display: flex;
+}
+.cust{
+    width: 200px; 
+    height: 200px;
+    margin-right: 30px;
+    box-shadow: 0px 0px 2px;
+    border-radius: 10px;
+}
+.c-txt legend{
+    font-weight: bolder;
+    font-size: 8px;
+}
+.c-txt{
+    font-size: smaller;
+    margin-top: 20px;
+    width: 500px;
+}
+.dep{
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    position: relative;
+    left: 50%;
+}
+.dep hr{
+    width: 10px;
+    height: 10px;
+    border-radius: 35px;
+    background-color: #cacaca;
+    box-shadow: 0px 0px 2px;    
+}
+hr.hr3{
+    background-color: #525256;
+}
+.cl5{
+    margin-bottom: 5%;
+}
+.cl5 h2{
+    text-align: center;
+}
+.create{
+    width: 300px;
+    height: 30px;
+    margin: 10px 0px 10px 38%;
+    background-color: #e65c24;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+}
+.ch-t{
+    text-align: center;
+    font-size: smaller;
+}
+footer{
+    background-color: #525256;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    padding: 10px 80px 10px 80px;
+    
+}
+footer ul{
+    margin-top: 5px;
+    list-style-type: none;
+}
