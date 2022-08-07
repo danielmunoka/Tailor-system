@@ -1,7 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* border: 1px solid rgb(153, 152, 152); */
 }
+.mnu{
+    display: none;
+}
+
 body {
     font-family:  sans-serif;
 }
@@ -11,17 +16,37 @@ header{
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
 }
-.logo{
+/* .logo{
     margin: 10px ; 
     margin: 30px 0px 20px 30px ;
+} */
+nav{
+    display: flex;
+    align-items: center;
+    /* width: 20em; */
+    /* width: fit-content; */
+    /* margin: 30px; */
+    /* border: 1px solid; */
 }
+
+.li-def{
+    color: #e65c24;
+}
+
+/* nav ul li:hover{
+    color: #e65c24;
+    cursor: pointer;
+} */
+
 nav ul{
     display: flex;
-    margin: 30px;
-    width: 300px;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
 }
 .serv img{
@@ -30,19 +55,25 @@ nav ul{
     color: white; 
     vertical-align: middle;  
 }
-
-li.login{
-    border: 1px solid white;
-    width: 80px;
-    padding: 4px 10px 4px 10px;
+li{
+    padding-inline: 10px;
+}
+.cart,.login{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-inline:4px ;
+}
+.login{
+    border: 1px solid white;
 }
 img.imo{
     width: 16px;
     height: 16px;
+    margin-right: 5px;
     vertical-align: middle;
 }
+
 section.pub{
     background-color: #FBF9F9;
     height: 500px;
@@ -55,17 +86,23 @@ section.pub{
     margin-bottom: 2px;
     box-shadow: 0px 0px 9px black;
     justify-content: space-between ;
+    align-items: center;
 
 }
-
+.cls{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.cl1-inf{
+    margin-right: 10px;
+    height: 100%;
+}
 .img{
     border-radius: 10px;
     box-shadow: 0px 0px 9px black;
-}
-.r-d ,.l-d{
-    height: 100%;
-    margin: 80px 20px 0px 20px;
-    
+    width: 25vw; 
 }
 .r-direct, .l-direct{
     width: 20px;
@@ -90,7 +127,7 @@ section.pub{
 
 .st{
     text-align: center;
-    /* color: rgb(51, 51, 51); */
+
 }
 .div{
     display: flex;
@@ -121,8 +158,12 @@ h4 {
     display: flex;
     padding: 40px;
 }
+.cl-ima{
+    width: 200px;
+    height: 200px;
+}
 .prod {
-    padding-left: 20px;
+    padding: 20px;
 }
 
 .tit {
@@ -130,7 +171,7 @@ h4 {
 }
 
 .px {
-    font-size: 10px;
+    font-size: small;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -143,17 +184,21 @@ h4 {
     font-size: 8px;
     font-weight: bold;
 }
+.cl4{
+    padding: 20px;
+}
 .cl4 h2{
     text-align: center;
 }
 .elm{
     background-color: #fbf9f9;
     box-shadow: 0px 2px 5px;
-    padding: 2% 0px 2% 12%;
-    width: 88%;
+    
 }
 .celm{
     display: flex;
+    margin: 5%;
+    padding-top: 20px ;
 }
 .cust{
     width: 200px; 
@@ -167,9 +212,7 @@ h4 {
     font-size: 8px;
 }
 .c-txt{
-    font-size: smaller;
-    margin-top: 20px;
-    width: 500px;
+    font-size: small;
 }
 .dep{
     display: flex;
@@ -177,6 +220,8 @@ h4 {
     width: 70px;
     position: relative;
     left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
 }
 .dep hr{
     width: 10px;
@@ -194,19 +239,27 @@ hr.hr3{
 .cl5 h2{
     text-align: center;
 }
+.cl5-a{
+    width: 100%;
+    
+}
 .create{
     width: 300px;
     height: 30px;
-    margin: 10px 0px 10px 38%;
+    margin-top: 10px;
     background-color: #e65c24;
     color: white;
     font-weight: bolder;
     border-radius: 5px;
     border: none;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
 }
 .ch-t{
     text-align: center;
     font-size: smaller;
+    margin-top: 10px;
 }
 footer{
     background-color: #525256;
@@ -214,10 +267,126 @@ footer{
     display: flex;
     justify-content: space-between;
     font-size: small;
-    padding: 10px 80px 10px 80px;
+    padding-block: 10px;
     
 }
+.exit{
+    display: none;
+}
+
 footer ul{
-    margin-top: 5px;
+
     list-style-type: none;
+}
+@media screen and (max-width: 414px) 
+{  
+    .mnu{
+        display: initial;
+        
+    }
+    .mnu a{
+        display: initial;
+        padding: 4px 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #e65b24f4;
+        font-weight: bolder;
+        border-radius: 5px;
+    }
+    nav.nav-lst{
+        display: none;
+    }
+    .nav-lst:target{
+        display: flex;
+        position: absolute;
+        background-color: #1ca78b;
+        left:0;
+        top: 0;
+        width: 60vw;
+        height: 100vh;
+        padding-inline: 10px 15px;
+    }
+    .lst{
+        display: flex;
+        font-size: x-large;
+        flex-direction: column; 
+        margin-top: -50vh;
+    }
+   
+    .exit{
+        display: initial;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 5px 8px;
+        background-color: #e65c24;
+        border-radius: 20px;
+    }
+    .exit a{
+        text-decoration: none;
+        font-weight: bolder;
+        color: white;
+    }
+    ul li img{
+        display: none;
+    }
+    li.login{
+        border: transparent;
+    }
+    .nav-lst li{
+        width: 200px;
+        background-color: #187f6b;
+        margin-top:1em;
+        border-radius: 4px;
+    }
+    .lst li:hover{
+        background-color: #e65b24f1;
+    }
+    .cls{
+        display: block;
+    }
+    .bt{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .but{
+        width: 100%;
+    }
+    .img{
+        margin-left: 16px;
+        /* width: 70px; */
+        width:55vw;
+    }
+    .div{
+        display: block;
+    }
+    .cl3{
+        display: block;
+    }
+    .prod p{
+        font-size: medium;
+        padding: 0px;
+    }
+    .nam{
+        width: 40vw;
+    }
+    .celm{
+        display: block;
+    }
+    .celm p{
+        width: fit-content;
+    }
+    
+    .cust{
+        width: 100%;
+        height: auto;
+    }
+    .cl-ima{
+        width: 100%;
+        height: 400px;
+    }
+    footer{
+        padding: 10px;
+    }
+       
 }

@@ -1,0 +1,52 @@
+/* iphone SE */
+@media screen and (max-width: 375px) {
+    .lst{
+        /* flex-direction: column; */
+        list-style: none;
+    }
+    .nav-lf {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70%;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.668);
+    }
+    .nav-lf:target {
+        display: block;
+    }
+    .img-x{
+        position: absolute;
+        top:0;
+        right: 0;
+        padding: 5px;
+    }
+    .img-x img:hover{
+        background-color: #e65c24;
+        border-radius: 50%;
+    }
+    .lg{
+        height: 20px;
+        width: 60px;
+        font-size: larger;
+        padding: 10px;
+    }
+    .menu{
+        height: 100vh;
+        
+    }
+    .lst li{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .humb{
+        width: 20px;
+        height: 20px;
+        float: right;
+        background-color: #e65c24;
+    }
+
+    
+}
